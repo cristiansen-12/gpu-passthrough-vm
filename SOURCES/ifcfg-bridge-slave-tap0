@@ -1,0 +1,6 @@
+TYPE=Ethernet
+NAME=bridge-slave-tap0
+UUID=313263c3-2254-4eb5-92b0-8c4352917c1b
+DEVICE=tap0
+ONBOOT=yes
+BRIDGE=xenbr0

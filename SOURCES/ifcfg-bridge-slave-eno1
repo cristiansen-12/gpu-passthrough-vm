@@ -1,0 +1,6 @@
+TYPE=Ethernet
+NAME=bridge-slave-eno1
+UUID=9a34c788-73d6-4839-bb74-3ff0532ea4b4
+DEVICE=eno1
+ONBOOT=yes
+BRIDGE=xenbr0

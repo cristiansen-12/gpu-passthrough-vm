@@ -1,0 +1,16 @@
+# location: /usr/lib/systemd/system
+[Unit]
+Description 	= Windows 10 Virtual Machine
+After       	= syslog.target
+
+[Service]
+Type   		= simple
+ExecStartPre	= sudo brctl addif xenbr0 tap0
+ExecStart   	= runvm.sh
+ExecStop    	= runvm.sh -stop
+Restart     	= no
+TimeoutStopSec	= 90
+
+[Install]
+After		= multi-user.target
+
