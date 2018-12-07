@@ -88,7 +88,7 @@ fi
 
 
 %changelog
-* Tue Nov 27 2018 
+* Tue Nov 27 2018 cristiansen
 - 
 
 # nmcli connection add type tun ifname tap0 con-name tap0 mode tap owner `id -u cristiansen` ip4 10.1.0.1/24
