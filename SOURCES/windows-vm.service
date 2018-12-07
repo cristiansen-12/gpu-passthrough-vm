@@ -5,7 +5,7 @@ After       	= syslog.target
 
 [Service]
 Type   		= simple
-ExecStartPre	= sudo brctl addif xenbr0 tap0
+ExecStartPre	=- sudo brctl addif xenbr0 tap0
 ExecStart   	= runvm.sh
 ExecStop    	= runvm.sh -stop
 Restart     	= no
